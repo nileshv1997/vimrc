@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 syntax enable
@@ -21,7 +22,11 @@ set smartindent
 set wrap
 set cul
 set showmatch
+set tabstop=2
+set shiftwidth=2
+set laststatus=2
 filetype plugin indent on
 nmap // <leader>c<space>
 vmap // <leader>cs
 nmap ; :
+
