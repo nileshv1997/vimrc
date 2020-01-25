@@ -17,16 +17,22 @@ set hlsearch
 set expandtab
 set smarttab
 set autoindent
-set shiftwidth=2
+set shiftwidth=4
 set smartindent
 set wrap
 set cul
 set showmatch
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
 set laststatus=2
+set textwidth=120
 filetype plugin indent on
 nmap // <leader>c<space>
 vmap // <leader>cs
 nmap ; :
 
+nmap <C-o> :tabnew 
+nmap <C-h> :tabp<CR>
+nmap <C-l> :tabn<CR>
+nmap <C-j> :tabfirst<CR>
+nmap <C-k> :tablast<CR>
